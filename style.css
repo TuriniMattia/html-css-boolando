@@ -26,7 +26,6 @@ body {
 }
 
 
-/* LAYOUT */
 
 .container {
 	max-width: 1024px;
@@ -37,8 +36,98 @@ body {
 .row {
 	display: flex;
 	flex-wrap: wrap;
+    padding: 20px;
 }
 
-.col-6 {
-	width: calc(6 * 100% / 12);
+.col-33 {
+	width: 33%;
+    padding: 20px;
 }
+
+
+
+
+.page-header {
+	background-color: #FF6900;
+	color: white;
+	padding: 12px 0;
+}
+
+.page-header .row {
+	justify-content: space-between;
+}
+
+.b-logo {
+    max-width: 20%;
+}
+
+
+.page-content .section {
+	padding: 60px 0;
+}
+
+.page-footer {
+	background-color:#1A1A1A;
+	color: white;
+	padding: 32px 0;
+}
+
+.green-badge {
+	background-color: #008000;
+    display: inline-block;
+	line-height: 30px;
+	font-size: 14px;
+	padding: 0 12px;
+	color: white;
+    font-weight: 300;
+   
+}
+
+.red-badge {
+	background-color: #FF0000;
+    display: inline-block;
+	line-height: 30px;
+	font-size: 14px;
+	padding: 0 12px;
+	color: white;
+    font-weight: 300;
+   
+
+}
+
+
+.badge-container{
+    position: absolute;
+    bottom: 20px;
+}
+
+.card-header .badge {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	z-index: 10;
+}
+
+.card-header {
+	position: relative;
+    border: solid black;
+}
+
+.card-header > img {
+	display: block;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity:0;
+    top: 0;
+    left: 0;
+    transition: opacity 500ms;
+}
+.card-product:hover .overlay{
+    opacity: 1;
+}
+
+
