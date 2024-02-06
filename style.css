@@ -101,16 +101,11 @@ body {
     bottom: 20px;
 }
 
-.card-header .badge {
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-	z-index: 10;
-}
+
 
 .card-header {
 	position: relative;
-    border: solid black;
+    
 }
 
 .card-header > img {
@@ -130,4 +125,15 @@ body {
     opacity: 1;
 }
 
-
+.hearts-badge {
+    font-size:x-large;
+    background-color: white;
+    display: inline-block;
+    width: 40px;
+    line-height: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    text-align: center;
+}
